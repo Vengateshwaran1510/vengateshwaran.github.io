@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vengateshwaran A — Full Stack Web Developer</title>
+<meta name="description" content="Portfolio of Vengateshwaran A, a full stack web developer working across Angular, PHP, Java and MySQL." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="top">
+  <div class="wrap header-row">
+    <a class="brand" href="#top">
+      <span class="brand-mark" aria-hidden="true">VA</span>
+      <span class="brand-name">Vengateshwaran A</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-ghost header-cta" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-status"><span class="status-dot" aria-hidden="true"></span><span id="hero-status-text">Open to full-time roles and freelance opportunities</span></p>
+        <h1 id="hero-name">Vengateshwaran A</h1>
+        <p class="hero-role" id="hero-role">Full Stack Web Developer</p>
+        <p class="hero-summary" id="hero-summary">
+          I build web applications end to end — from the schema up. One year of hands-on
+          experience shipping Angular frontends, PHP/Java backends and REST APIs on top of
+          optimized MySQL databases, across e-commerce, healthcare and directory platforms.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-outline" href="#contact">Contact me</a>
+        </div>
+        <dl class="hero-stats" id="hero-stats"><!-- populated by JS --></dl>
+      </div>
+
+      <div class="hero-diagram" aria-hidden="true">
+        <svg viewBox="0 0 520 460" class="stack-svg" role="img" aria-label="Diagram of the technology stack: Angular and JavaScript interface connects to a REST API layer, which connects to a PHP and Java backend, which connects to a MySQL database.">
+          <defs>
+            <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
+              <path d="M 26 0 L 0 0 0 26" fill="none" stroke="var(--line-faint)" stroke-width="1"/>
+            </pattern>
+          </defs>
+          <rect width="520" height="460" fill="url(#grid)"/>
+
+          <!-- connector lines -->
+          <path class="wire" d="M170,70 L170,150" />
+          <path class="wire" d="M170,210 L170,290" />
+          <path class="wire" d="M170,350 L350,350" />
+          <path class="wire" d="M350,350 L350,290" />
+
+          <!-- node: UI -->
+          <g class="node">
+            <rect x="60" y="20" width="220" height="50" rx="2" />
+            <text x="80" y="41">Angular · JavaScript</text>
+            <text x="80" y="58" class="node-sub">UI Layer</text>
+          </g>
+
+          <!-- node: REST -->
+          <g class="node node-accent">
+            <rect x="60" y="150" width="220" height="60" rx="2" />
+            <text x="80" y="176">REST API</text>
+            <text x="80" y="194" class="node-sub">Data contract</text>
+          </g>
+
+          <!-- node: backend -->
+          <g class="node">
+            <rect x="60" y="290" width="220" height="60" rx="2" />
+            <text x="80" y="316">PHP · Java</text>
+            <text x="80" y="334" class="node-sub">Application layer</text>
+          </g>
+
+          <!-- node: db -->
+          <g class="node node-db">
+            <rect x="290" y="320" width="180" height="60" rx="2" />
+            <text x="310" y="346">MySQL</text>
+            <text x="310" y="364" class="node-sub">Schema + indexes</text>
+          </g>
+
+          <circle class="joint" cx="170" cy="150" r="4" />
+          <circle class="joint" cx="170" cy="290" r="4" />
+          <circle class="joint" cx="350" cy="350" r="4" />
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div>
+        <h2>About</h2>
+        <p class="section-lede">
+          A results-driven developer who has shipped five-plus end-to-end projects — e-commerce
+          platforms, a healthcare booking flow and a matrimony portal — with a habit of profiling
+          slow queries before they become slow pages.
+        </p>
+      </div>
+      <dl class="spec-sheet" aria-label="Quick facts">
+        <div><dt>Role</dt><dd id="about-role">Full Stack Web Developer</dd></div>
+        <div><dt>Based in</dt><dd id="about-location">Manamadurai, Tamil Nadu</dd></div>
+        <div><dt>Experience</dt><dd id="about-experience">1 year, professional</dd></div>
+        <div><dt>Core stack</dt><dd>Angular · PHP · Java · MySQL</dd></div>
+        <div><dt>Status</dt><dd id="about-status">Open to full-time roles and freelance opportunities</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p class="section-lede">A log of roles, most recent first.</p>
+      </div>
+      <ol class="commit-log" id="experience-list">
+        <!-- populated by JS -->
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="section-lede">Five records on file. More get appended, never overwritten.</p>
+      </div>
+      <div class="record-grid" id="projects-list">
+        <!-- populated by JS -->
+      </div>
+      <button class="btn btn-ghost add-record-btn" id="open-project-modal" type="button">
+        + Add record
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="section" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="section-lede">Grouped by where they sit in the stack.</p>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- populated by JS -->
+      </div>
+      <div class="soft-skills" id="soft-skills-wrap">
+        <span class="soft-skills-label">Also brings:</span>
+        <span id="soft-skills-list"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION + ACHIEVEMENTS ================= -->
+  <section class="section" id="education">
+    <div class="wrap edu-grid">
+      <div>
+        <h2>Education</h2>
+        <ul class="edu-list" id="education-list"><!-- populated by JS --></ul>
+      </div>
+      <div>
+        <h2>Achievements</h2>
+        <ul class="achievement-list" id="achievements-list"><!-- populated by JS --></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact-section" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Let's work together</h2>
+        <p class="section-lede">
+          Open to full-time roles and freelance builds. The fastest way to reach me is email.
+        </p>
+      </div>
+      <dl class="contact-list" id="contact-list"><!-- populated by JS --></dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>© <span id="year"></span> Vengateshwaran A. Built by hand, no template.</p>
+    <a href="#top" class="back-to-top">Back to top</a>
+  </div>
+</footer>
+
+<!-- ================= ADD PROJECT MODAL ================= -->
+<div class="modal-backdrop" id="project-modal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head">
+      <h3 id="modal-title">Add a project record</h3>
+      <button class="modal-close" id="close-project-modal" type="button" aria-label="Close">&times;</button>
+    </div>
+    <p class="modal-note">
+      This previews instantly in your browser only (saved to local storage). To make it visible to
+      every visitor, click <strong>"Copy code for data.js"</strong> below and paste the result into the
+      <code>projects</code> array in <code>js/data.js</code>.
+    </p>
+    <form id="project-form">
+      <label>Project name
+        <input type="text" name="name" required placeholder="e.g. Inventory Dashboard" />
+      </label>
+      <label>Description
+        <textarea name="description" rows="3" required placeholder="What it does and what you built"></textarea>
+      </label>
+      <label>Tech stack <span class="hint">(comma-separated)</span>
+        <input type="text" name="stack" placeholder="HTML, CSS, JS, PHP, MySQL" />
+      </label>
+      <label>Link <span class="hint">(optional)</span>
+        <input type="url" name="link" placeholder="https://github.com/..." />
+      </label>
+      <div class="modal-actions">
+        <button type="submit" class="btn btn-primary">Add to page</button>
+        <button type="button" class="btn btn-outline" id="copy-project-code">Copy code for data.js</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
